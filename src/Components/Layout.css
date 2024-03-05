@@ -1,0 +1,136 @@
+:root {
+    --background-color: rgb(242, 246, 247);
+    --box-shadow:rgb(176, 182, 184);
+    --color:black;
+    --btn-color:white;
+    --btn-bg: black;
+}
+
+[data-theme="dark"] {
+    --background-color: #242424;
+    --color:white;
+    --btn-color:rgb(32, 31, 31);
+    --btn-bg:white;
+}
+
+* {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+.categoryDivison {
+    display: flex;
+    height: 500vh;
+    width: 100vw;
+}
+
+.category {
+    position: sticky;
+    top: 15vh;
+    height: 100vh;
+    width: 50vw;
+}
+
+.categoryImage {
+    height: 80vh;
+    width: 40vw;
+    object-fit: contain;
+    box-shadow: 0px 0px 5px 0px var(--box-shadow);
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    height: 100vh;
+    width: 50vw;
+}
+
+.productsImage {
+    height: 30vh;
+    width: 40vw;
+    object-fit: contain;
+    box-shadow: 0px 0px 5px 0px var(--box-shadow);
+    transition: transform 0.5s;
+}
+
+.productsImage:hover {
+    transform: scale(1.2);
+}
+
+.productsOuterDivision {
+    justify-self: start;
+    align-self: flex-start;
+}
+
+.description {
+    font-size: 2vmax;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 2vmax;
+    font-weight: bold;
+}
+
+.button {
+    height: 5vmax;
+    width: fit-content;
+    font-size: 2vmax;
+    border-radius: 1vmax;
+    border: none;
+    background-color: #FFD812;
+    color: #000000;
+    font-family: 'Gilroy';
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--btn-bg);
+    background-color: var(--btn-color);
+}
+
+@media only screen and (max-width:600px) {
+    .categoryDivison {
+        flex-direction: column;
+        justify-content: start;
+        height: 320vh;
+        width: 100vw;
+    }
+
+    .category {
+        height: 40vh;
+        width: 100vw;
+        /* background-color: rgb(242, 246, 247); */
+        top: 0;
+        /* box-shadow: 0px 0px 5px 0px rgb(176, 182, 184); */
+    }
+
+    .categoryImage {
+        height: 30vh;
+        width: 80vw;
+        margin-top: 7.5vh;
+        object-fit: contain;
+        box-shadow: 0px 0px 5px 0px var(--box-shadow);
+    }
+
+    .products {
+        /* background-color: pink; */
+        height: 57vh;
+        width: 100vw;
+        gap: 2vh;
+        /* box-shadow: 0px 0px 5px 0px rgb(176, 182, 184); */
+    }
+
+    .productsImage {
+        height: 30vh;
+        width: 70vw;
+    }
+
+    .productsImage:hover {
+        transform: none;
+    }
+}

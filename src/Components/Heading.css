@@ -1,0 +1,40 @@
+:root {
+    --background-color: rgb(242, 246, 247);
+    --box-shadow:rgb(176, 182, 184);
+}
+
+[data-theme="dark"] {
+    --background-color: #242424;
+}
+.storeName{
+    font-size: 4.5vmax ;
+    height: 6vmax;
+    position: fixed;
+    background-color: var(--background-color);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    box-shadow: 0px 0px 5px 0px var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.storeName .link{
+    text-decoration: none;
+}
+.cart{
+    position: relative;
+}
+.cartNumber{
+    position: absolute;
+    top:-5px;
+    right:-22px;
+    font-size: 2vmax;
+}
+@media only screen and (max-width:600px){
+    .cartNumber{
+        top: 0px;
+        right: -15px;
+    }
+}
