@@ -1,6 +1,5 @@
 <h1 align="center">Cartify</h1>
 <h1>Project Description</h1>
-
 Cartify is a basic online store made using React. It's like a small version of big online shops. You can look at products, put them in your shopping cart, and buy them securely. It's easy to use and helps you shop online without any fuss.
 
 # Getting Started with Create React App
