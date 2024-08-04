@@ -49,8 +49,9 @@
 }
 
 .productsImage {
+    padding: 2%;
     height: 30vh;
-    width: 40vw;
+    width: fit-content;
     object-fit: contain;
     box-shadow: 0px 0px 5px 0px var(--box-shadow);
     transition: transform 0.5s;
@@ -66,25 +67,28 @@
 }
 
 .description {
-    font-size: 2vmax;
-    font-weight: 500;
+    font-size: 1.5vmax;
+    font-weight:lighter;
+    width: 80%;
 }
 
 .price {
     font-size: 2vmax;
+    font-weight: lighter;
+}
+.priceTag {
     font-weight: bold;
 }
 
 .button {
-    height: 5vmax;
-    width: fit-content;
-    font-size: 2vmax;
+    padding: 2% 3%;
+    font-size: 1.5vmax;
     border-radius: 1vmax;
     border: none;
     background-color: #FFD812;
     color: #000000;
     font-family: 'Gilroy';
-    transition: all 0.5s;
+    transition: all 0.4s;
     cursor: pointer;
 }
 

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import './Layout.css';
 import { electronics, shoes, clothes, watches, makeup } from './Data';
-import Makeup from '../Assets/Makeup/Makeup.jpeg';
-import Watches from '../Assets/Watches/Watches.jpeg';
-import Shoes from '../Assets/Shoes/Shoes.jpeg';
-import Clothes from '../Assets/Clothes/Clothes.jpeg';
+import Makeup from '../Assets/Makeup/Makeup.jpg';
+import Watches from '../Assets/Watches/Watches.jpg';
+import Shoes from '../Assets/Shoes/Shoes.jpg';
+import Clothes from '../Assets/Clothes/Clothes.jpg';
 import Electronics from '../Assets/Electronics/Electronics.jpg';
 import { cartContext } from '../App';
 export const Layout = () => {
@@ -16,10 +16,10 @@ export const Layout = () => {
                 <div>{electronics.map((item, index) => {
                     return (
                         <>
-                            <div className='products'>
+                            <div className='products' key={index}>
                                 <img src={item.image} alt='Images of Electronics' className='productsImage'></img>
                                 <div className='description'>{item.description}</div>
-                                <div className='price'> Price : {item.price}</div>
+                                <div className='price'> <span className='priceTag'>Price :</span> {item.price}</div>
                                 <button className='button' onClick={() => {
                                     setCart([...cart, item])
                                 }}>Add To Cart</button>
@@ -35,10 +35,10 @@ export const Layout = () => {
                     {clothes.map((item, index) => {
                         return (
                             <>
-                                <div className='products'>
+                                <div className='products' key={index}>
                                     <img src={item.image} alt='Images of Clothes' className='productsImage'></img>
                                     <div className='description'> {item.description}</div>
-                                    <div className='price'>Price :{item.price}</div>
+                                    <div className='price'> <span className='priceTag'>Price :</span> {item.price}</div>
                                     <button className='button' onClick={() => {
                                         setCart([...cart, item])
                                     }}>Add To Cart</button>
@@ -53,10 +53,10 @@ export const Layout = () => {
                     {shoes.map((item, index) => {
                         return (
                             <>
-                                <div className='products'>
+                                <div className='products' key={index}>
                                     <img src={item.image} alt='Images of Shoes' className='productsImage'></img>
                                     <div className='description'>{item.description}</div>
-                                    <div className='price'>Price :{item.price}</div>
+                                    <div className='price'><span className='priceTag'>Price :</span> {item.price}</div>
                                     <button className='button' onClick={() => {
                                         setCart([...cart, item])
                                     }}>Add To Cart</button>
@@ -72,10 +72,10 @@ export const Layout = () => {
                     {watches.map((item, index) => {
                         return (
                             <>
-                                <div className='products'>
+                                <div className='products' key={index}>
                                     <img src={item.image} alt='Images of Watches' className='productsImage'></img>
                                     <div className='description'>{item.description}</div>
-                                    <div className='price'>Price :{item.price}</div>
+                                    <div className='price'><span className='priceTag'>Price :</span> {item.price}</div>
                                     <button className='button' onClick={() => {
                                         setCart([...cart, item])
                                     }}>Add To Cart</button>
@@ -91,10 +91,10 @@ export const Layout = () => {
                     {makeup.map((item, index) => {
                         return (
                             <>
-                                <div className='products'>
+                                <div className='products' key={index}>
                                     <img src={item.image} alt='Images of Makeup' className='productsImage'></img>
                                     <div className='description'>{item.description}</div>
-                                    <div className='price'>Price :{item.price}</div>
+                                    <div className='price'><span className='priceTag'>Price :</span> {item.price}</div>
                                     <button className='button' onClick={() => {
                                         setCart([...cart, item])
                                     }}>Add To Cart</button>
