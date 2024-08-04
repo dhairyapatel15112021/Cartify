@@ -1,50 +1,25 @@
-import Electronic1 from '../Assets/Electronics/Electronics-1.jpeg';
-import Electronic2 from '../Assets/Electronics/Electronics-2.jpeg';
-import Electronic3 from '../Assets/Electronics/Electronics-3.jpeg';
-import Electronic4 from '../Assets/Electronics/Electronics-4.jpeg';
-import Electronic5 from '../Assets/Electronics/Electronics-5.jpeg';
-import Makeup1 from '../Assets/Makeup/Makeup-1.jpeg';
-import Makeup2 from '../Assets/Makeup/Makeup-2.jpeg';
-import Makeup3 from '../Assets/Makeup/Makeup-3.jpeg';
-import Makeup4 from '../Assets/Makeup/Makeup-4.jpeg';
-import Makeup5 from '../Assets/Makeup/Makeup-5.jpeg';
-import Watches1 from '../Assets/Watches/Watches-1.jpeg';
-import Watches2 from '../Assets/Watches/Watches-2.jpeg';
-import Watches3 from '../Assets/Watches/Watches-3.jpeg';
-import Watches4 from '../Assets/Watches/Watches-4.jpeg';
-import Watches5 from '../Assets/Watches/Watches-5.jpeg';
-import Shoes1 from '../Assets/Shoes/Shoes-1.jpeg';
-import Shoes2 from '../Assets/Shoes/Shoes-2.jpeg';
-import Shoes3 from '../Assets/Shoes/Shoes-3.jpeg';
-import Shoes4 from '../Assets/Shoes/Shoes-4.jpeg';
-import Shoes5 from '../Assets/Shoes/Shoes-5.jpeg';
-import Clothes1 from '../Assets/Clothes/Clothes-1.jpeg';
-import Clothes2 from '../Assets/Clothes/Clothes-2.jpeg';
-import Clothes3 from '../Assets/Clothes/Clothes-3.jpeg';
-import Clothes4 from '../Assets/Clothes/Clothes-4.jpeg';
-import Clothes5 from '../Assets/Clothes/Clothes-5.jpeg';
-export const electronics = [{ 'image': Electronic1, 'description': 'Very Good Cool Gadgets With Low Price', 'price': 3000 },
-{ 'image': Electronic2, 'description': 'Very Good Cool Gadgets With Low Price', 'price': 4000 },
-{ 'image': Electronic3, 'description': 'Very Good Cool Gadgets With Low Price', 'price': 2000 },
-{ 'image': Electronic4, 'description': 'Very Good Cool Gadgets With Low Price', 'price': 10000 },
-{ 'image': Electronic5, 'description': 'Very Good Cool Gadgets With Low Price', 'price': 15000 }];
-export const clothes = [{ 'image': Clothes1, 'description': 'Very Good Cool and Premium Clothes With Low Price Price Price', 'price': 300 },
-{ 'image': Clothes2, 'description': 'Very Good Cool and Premium Clothes With Low Price', 'price': 400 },
-{ 'image': Clothes3, 'description': 'Very Good Cool and Premium Clothes With Low Price', 'price': 200 },
-{ 'image': Clothes4, 'description': 'Very Good Cool and Premium Clothes With Low Price', 'price': 1000 },
-{ 'image': Clothes5, 'description': 'Very Good Cool and Premium Clothes With Low Price', 'price': 1500 }];
-export const watches = [{ 'image': Watches1, 'description': 'Very Premium Watches With High Price', 'price': 30000 },
-{ 'image': Watches2, 'description': 'Very Premium Watches With High Price', 'price': 40000 },
-{ 'image': Watches3, 'description': 'Very Premium Watches With High Price', 'price': 20000 },
-{ 'image': Watches4, 'description': 'Very Premium Watches With High Price', 'price': 100000 },
-{ 'image': Watches5, 'description': 'Very Premium Watches With High Price', 'price': 150000 }];
-export const shoes = [{ 'image': Shoes1, 'description': 'Very Premium Shoes With High Price', 'price': 300000 },
-{ 'image': Shoes2, 'description': 'Very Premium Shoes With High Price', 'price': 400000 },
-{ 'image': Shoes3, 'description': 'Very Premium Shoes With High Price', 'price': 200000 },
-{ 'image': Shoes4, 'description': 'Very Premium Shoes With High Price', 'price': 1000000 },
-{ 'image': Shoes5, 'description': 'Very Premium Shoes With High Price', 'price': 1500000 }];
-export const makeup = [{ 'image': Makeup1, 'description': 'Very High Quality Makeup With High Price', 'price': 30 },
-{ 'image': Makeup2, 'description': 'Very High Quality Makeup With High Price', 'price': 40 },
-{ 'image': Makeup3, 'description': 'Very High Quality Makeup With High Price', 'price': 20 },
-{ 'image': Makeup4, 'description': 'Very High Quality Makeup With High Price', 'price': 100 },
-{ 'image': Makeup5, 'description': 'Very High Quality Makeup With High Price', 'price': 150 }];
+export const electronics = [{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746362/Electronics-1_vbgcqi.jpg", 'description': 'Advanced drone with high-resolution camera and GPS navigation for stunning aerial photography and videography.', 'price': 14999 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746376/Electronics-2_cmye5o.jpg", 'description': 'High-fidelity headphones with noise-cancellation technology for an immersive audio experience. Comfortable and stylish design.', 'price': 2499 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746368/Electronics-3_idybt0.jpg", 'description': 'Professional DSLR camera with interchangeable lenses, perfect for capturing high-quality photos and videos.', 'price': 49999 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746372/Electronics-4_xbjyn4.jpg", 'description': 'High-sensitivity microphone ideal for recording, streaming, and podcasting. Delivers clear and crisp sound quality.', 'price': 1499 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746380/Electronics-5_optkjo.jpg", 'description': 'Ergonomic gameplay controller with responsive buttons and joystick for a seamless gaming experience. Compatible with various platforms.', 'price': 3499 }];
+export const clothes = [{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746325/Clothes-1_duapqp.jpg", 'description': 'Stylish and vibrant printed shirts perfect for any occasion. Made with high-quality fabric for comfort and durability.', 'price': 799 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746289/Clothes-2_hzbdzh.jpg", 'description': 'Cozy and trendy hoodies designed for ultimate comfort and warmth. Available in various colors and styles.', 'price': 1299 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722745986/Clothes-3_ilvlaj.jpg", 'description': 'Essential winter wear including sweaters, jackets, and thermals to keep you warm and fashionable in cold weather.', 'price': 2499 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746258/Clothes-4_awjmrv.jpg", 'description': 'Elegant and fashionable ladies wear, including dresses, tops, and skirts. Perfect for casual and formal events.', 'price': 999 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746051/Clothes-5_qv0z3f.jpg", 'description': 'Classic and sophisticated blazers for a sharp and professional look. Ideal for business meetings and formal occasions.', 'price': 2999 }];
+export const watches = [{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746502/Watches-1_nrrl9c.jpg", 'description': 'Elegant watch with a sleek steel silver belt. Perfect for both casual and formal occasions. Durable and stylish.', 'price': 3999 },
+{ 'image':"https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746502/Watches-2_iriqsl.jpg", 'description': 'Luxurious Emporio Armani watch featuring a sophisticated black leather belt. Ideal for making a statement.', 'price': 19999 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746506/Watches-3_hp9wxy.jpg", 'description': 'Stylish Casio watch with a striking gold and black color combination. Durable and versatile for any event.', 'price': 7499 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746503/Watches-4_dnbqic.jpg", 'description': 'Classic Adam Kimmer watch with a timeless design. Crafted for precision and elegance, suitable for all occasions.', 'price': 12999 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746504/Watches-5_kkevqg.jpg", 'description': 'Iconic Rolex watch known for its luxury and precision. A timeless piece that epitomizes class and sophistication.', 'price': 549999 }];
+export const shoes = [{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746518/Shoes-1_bfmnos.jpg", 'description': 'Sleek and stylish black Nike sneakers. Perfect for casual wear and sports activities. Comfortable and durable.', 'price': 5499 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746501/Shoes-2_fr0cjn.jpg", 'description': 'Classic white Nike sneakers that offer comfort and style. Ideal for everyday wear and versatile styling.', 'price': 5499 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746502/Shoes-3_yukwzg.jpg", 'description': 'Trendy Nike women\'s sneakers with a chic white, pink, and blue color combination. Perfect for a fashionable look.', 'price': 5999 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746501/Shoes-4_ibyfdc.jpg", 'description': 'High-quality Puma shoes with a fancy design. Perfect for both casual outings and sports activities.', 'price': 4499 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746503/Shoes-5_lgpfmf.jpg", 'description': 'Lightweight and flexible Nike Free shoes in vibrant red. Ideal for running and everyday comfort.', 'price': 6499 }];
+export const makeup = [{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746497/Makeup-4_uuyppr.jpg", 'description': 'Long-lasting and vibrant lipstick available in various shades. Smooth application for a perfect pout.', 'price': 499 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746459/Makeup-2_vnfazi.jpg", 'description': 'Premium makeup brush set for flawless application. Includes brushes for foundation, eyeshadow, and more.', 'price': 999 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746493/Makeup-3_dh9wro.jpg", 'description': 'Waterproof and smudge-proof eyeliner for precise and bold lines. Easy to apply and long-lasting.', 'price': 299 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746497/Makeup-4_uuyppr.jpg", 'description': 'Shiny and moisturizing lip gloss that adds a touch of glamour. Available in a variety of colors.','price': 349 },
+{ 'image': "https://res.cloudinary.com/dr8w2gb6b/image/upload/v1722746492/Makeup-5_fag6zu.jpg", 'description': 'Volumizing and lengthening mascara for dramatic lashes. Clump-free formula with long-lasting wear.', 'price': 399 }];
