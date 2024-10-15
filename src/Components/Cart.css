@@ -1,4 +1,4 @@
-:root {
+[data-theme="dark"] {
     --background-color: rgb(242, 246, 247);
     --box-shadow: rgb(176, 182, 184);
     --color: black;
@@ -6,7 +6,7 @@
     --btn-bg: black;
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
     --background-color: #242424;
     --color: white;
     --btn-color: rgb(32, 31, 31);
@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: var(--background-color);
 }
 
 .cartList {

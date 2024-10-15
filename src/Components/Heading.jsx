@@ -6,13 +6,9 @@ export const Heading = () => {
   const { cart, setCart } = useContext(cartContext);
   return (
     <div className='storeName'>
-      <Link to="/" className='link'>
-        Cartify
-      </Link>
+      <Link to="/" className='link'>Cartify</Link>
       <div className='cart'>
-        <Link to='/cart' className='link' >
-          Cart
-        </Link>
+        <Link to='/cart' className='link' >Cart</Link>
         <div className='cartNumber'>{cart.length}</div>
       </div>
     </div>

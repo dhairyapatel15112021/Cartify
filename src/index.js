@@ -3,19 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Layout } from './Components/Layout';
 import { Cart }  from './Components/Cart';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<App/>}>
-      <Route path='' element={<Layout/>} />
-      <Route path='/cart' element={<Cart/>} />
-    </Route>
-  )
-)
+const router = createBrowserRouter([
+  {
+    path : '/',
+    element : <App/>,
+    children : [
+      {path : "",element : <Layout/>},
+      {path : "/cart",element : <Cart/>}
+    ]
+  }
+])
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />

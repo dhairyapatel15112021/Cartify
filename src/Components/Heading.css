@@ -1,4 +1,4 @@
-:root {
+[data-theme="light"] {
     --background-color: rgb(242, 246, 247);
     --box-shadow:rgb(176, 182, 184);
 }

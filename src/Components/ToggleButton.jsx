@@ -2,13 +2,13 @@ import React from 'react'
 import './ToggleButton.css'
 export const ToggleButton = () => {
   return (
-    <div class="theme-switch-wrapper">
-      <em>light</em>
-      <label class="theme-switch" for="checkbox">
+    <div className="theme-switch-wrapper">
+      <em>dark</em>
+      <label className="theme-switch" htmlFor="checkbox">
         <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
+        <div className="slider round"></div>
       </label>
-      <em>Dark</em>
+      <em>light</em>
     </div>
   )
 }
