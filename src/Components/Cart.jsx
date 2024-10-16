@@ -3,9 +3,9 @@ import { cartContext } from '../App'
 import './Cart.css';
 
 const calculateTotal = (cart) => {
-  var Total = 0;
+  let Total = 0;
   for (var i = 0; i < cart.length; i++) {
-    Total += cart[i].price;
+    Total += (cart[i].price * cart[i].quntity);
   }
   return Total;
 }
@@ -27,7 +27,10 @@ export const Cart = () => {
           <div className='shoppingCart'>Shopping Cart</div>
           <div className='itemsAndPrice'>
             <div>items</div>
-            <div>price</div>
+            <div className='quntityAndPrice'>
+              <div>quntity</div>
+              <div>price</div>
+            </div>
           </div>
           <hr></hr>
         </div>
@@ -41,6 +44,7 @@ export const Cart = () => {
                     <img className='cartProductImage' src={item.image} alt='productsImage'></img>
                     <div className='cartProductDescription'>{item.description}</div>
                     <button className='cartProductRemove' onClick={() => cartUpdate(index)}>remove</button>
+                    <div className='cartQuntity'>{item.quntity}</div>
                     <div className='cartProductPrice'>{item.price}</div>
 
                   </div>

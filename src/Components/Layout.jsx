@@ -7,6 +7,7 @@ import { useShoe } from '../hooks/useShoe';
 import { useMakeUp } from '../hooks/useMakeUp';
 import { useElectronic } from '../hooks/useElectronic';
 import { useCloth } from '../hooks/useCloth';
+import { Loader } from './Loader';
 export const Layout = () => {
     const { cart, setCart } = useContext(cartContext);
     const makeUp = useMakeUp(makeup);
@@ -15,6 +16,18 @@ export const Layout = () => {
     const electronic = useElectronic(electronics);
     const cloth = useCloth(clothes);
     
+    const handleCart = (item)=>{
+        const id = item.id;
+        const index = cart.findIndex((item)=>item.id===id);
+        if(index===-1){
+            setCart([...cart, {...item,quntity:1}]);
+        }
+        else{
+            const oldCart = [...cart];
+            oldCart[index].quntity += 1;
+            setCart(oldCart);
+        }
+    }
     return (
         <div className='layout'>
             <div className='categoryDivison'>
@@ -25,12 +38,12 @@ export const Layout = () => {
                     return (
                             <div className='products' key={index}>
                                 {
-                                    item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}>loading</div> : <img src={item.image} alt='Images of Electronics' className='productsImage'></img>
+                                    item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}><Loader/></div> : <img src={item.image} alt='Images of Electronics' className='productsImage'></img>
                                 }
                                 <div className='description'>{item.description}</div>
                                 <div className='price'> <span className='priceTag'>Price :</span> {item.price}</div>
                                 <button className='button' onClick={() => {
-                                    setCart([...cart, item])
+                                    handleCart(item)
                                 }}>Add To Cart</button>
                             </div>
                     )
@@ -44,7 +57,7 @@ export const Layout = () => {
                         return (
                                 <div className='products' key={index}>
                                     {
-                                        item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}>loading</div> : <img src={item.image} alt='Images of Clothes' className='productsImage'></img>
+                                        item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}><Loader/></div> : <img src={item.image} alt='Images of Clothes' className='productsImage'></img>
                                     }
                                     <div className='description'> {item.description}</div>
                                     <div className='price'> <span className='priceTag'>Price :</span> {item.price}</div>
@@ -62,7 +75,7 @@ export const Layout = () => {
                         return (
                                 <div className='products' key={index}>
                                     {
-                                        item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}>loading</div> : <img src={item.image} alt='Images of Shoes' className='productsImage'></img>
+                                        item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}><Loader/></div> : <img src={item.image} alt='Images of Shoes' className='productsImage'></img>
                                     }
                                     <div className='description'>{item.description}</div>
                                     <div className='price'><span className='priceTag'>Price :</span> {item.price}</div>
@@ -81,7 +94,7 @@ export const Layout = () => {
                         return (
                                 <div className='products' key={index}>
                                     {
-                                        item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}>loading</div> : <img src={item.image} alt='Images of Watches' className='productsImage'></img>
+                                        item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}><Loader/></div> : <img src={item.image} alt='Images of Watches' className='productsImage'></img>
                                     }
                                     <div className='description'>{item.description}</div>
                                     <div className='price'><span className='priceTag'>Price :</span> {item.price}</div>
@@ -100,7 +113,7 @@ export const Layout = () => {
                         return (
                                 <div className='products' key={index}>
                                     {
-                                        item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}>loading</div> : <img src={item.image} alt='Images of Makeup' className='productsImage'></img>
+                                        item.loading ? <div className='productsImage' style={{ width: "30vw", display: "flex", justifyContent: "center", alignItems: "center" }}><Loader/></div> : <img src={item.image} alt='Images of Makeup' className='productsImage'></img>
                                     }
 
                                     <div className='description'>{item.description}</div>
